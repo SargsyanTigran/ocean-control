@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ocean Control</title>
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self';" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "../node_modules/three/build/three.module.js",
+        "three/addons/": "../node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="app">
+    <!-- left navigation rail -->
+    <nav class="rail" id="rail"></nav>
+
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+
+      <!-- ============ EXPEDITION MAP ============ -->
+      <section class="view active" id="view-map" data-view="map">
+        <canvas id="ocean-map"></canvas>
+        <div class="hud" id="map-hud"></div>
+      </section>
+
+      <!-- ============ DISCOVERY LIBRARY ============ -->
+      <section class="view" id="view-library" data-view="library"></section>
+
+      <!-- ============ MISSION DETAILS ============ -->
+      <section class="view" id="view-mission" data-view="mission"></section>
+
+      <!-- ============ SAVED ITEMS ============ -->
+      <section class="view" id="view-saved" data-view="saved"></section>
+
+      <!-- ============ SETTINGS ============ -->
+      <section class="view" id="view-settings" data-view="settings"></section>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

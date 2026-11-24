@@ -1,0 +1,19 @@
+{
+  "name": "ocean-control",
+  "productName": "Ocean Control",
+  "version": "1.0.0",
+  "description": "Deep ocean exploration and monitoring console (simulated data).",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": ["electron", "ocean", "three.js", "dashboard"],
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}
